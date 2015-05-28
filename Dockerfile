@@ -6,12 +6,7 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en  
 ENV LC_ALL en_US.UTF-8  
 
-# Set ENV Variables
-ENV MIX_ENV prod
-ENV NODE_ENV production
-
 WORKDIR /root
-ADD .env .env
 
 # Update and Install
 RUN apt-get update -y 
