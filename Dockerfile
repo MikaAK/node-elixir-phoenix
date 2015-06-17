@@ -1,4 +1,4 @@
-FROM mikaak/node-bower
+FROM mikaak/node-bower:latest
 MAINTAINER Mika Kalathil <mikakalathil@gmail.com>
 
 RUN locale-gen en_US.UTF-8  
