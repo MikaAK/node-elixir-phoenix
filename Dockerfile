@@ -17,7 +17,7 @@ RUN curl http://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb > erl
     && apt-get install -y erlang elixir \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* erlang-solutions_1.0_all.deb
 
-RUN mix archive.install https://github.com/phoenixframework/phoenix/releases/download/v0.13.1/phoenix_new-0.13.1.ez --force \
+RUN mix archive.install http://github.com/phoenixframework/phoenix/releases/download/v1.0.4/phoenix_new-1.0.4.ez --force \
     && mix local.rebar --force \
     && mix local.hex --force \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
